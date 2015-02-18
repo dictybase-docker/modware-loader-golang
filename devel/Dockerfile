@@ -17,7 +17,7 @@ ENV PATH /go/bin:$PATH
 
 COPY go-wrapper /usr/local/bin/
 
-RUN mkdir -p /go/src/app
+RUN chmod 755 /usr/local/bin/go-wrapper && mkdir -p /go/src/app
 WORKDIR /go/src/app
 
 # this will ideally be built by the ONBUILD below ;)
