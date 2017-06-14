@@ -1,4 +1,4 @@
-FROM dictybase/modware-loader:v1.10.0
+FROM dictybase/modware-loader:v1.10.2
 MAINTAINER Siddhartha Basu <siddhartha-basu@northwestern.edu>
 
 # gcc for cgo
@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		pkg-config \
 && rm -rf /var/lib/apt/lists/*
 
-ENV GOLANG_VERSION 1.8
+ENV GOLANG_VERSION 1.8.3
 ENV GOLANG_DOWNLOAD_URL https://golang.org/dl/go$GOLANG_VERSION.linux-amd64.tar.gz
 ENV GOLANG_DOWNLOAD_SHA256 53ab94104ee3923e228a2cb2116e5e462ad3ebaeea06ff04463479d7f12d27ca
 
