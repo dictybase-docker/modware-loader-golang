@@ -1,4 +1,4 @@
-FROM dictybase/modware-loader:v1.10.2
+FROM dictybase/modware-loader:v1.10.3
 MAINTAINER Siddhartha Basu <siddhartha-basu@northwestern.edu>
 
 # gcc for cgo
