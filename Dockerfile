@@ -38,3 +38,5 @@ CMD ["go-wrapper", "run"]
 ONBUILD COPY . /go/src/app
 ONBUILD RUN go-wrapper download
 ONBUILD RUN go-wrapper install
+
+COPY oci8.pc /usr/lib64/pkgconfig/
